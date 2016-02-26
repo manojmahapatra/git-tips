@@ -143,7 +143,9 @@ git log --pretty=oneline
 ```
 ##### Delete all local branches but master
 ```
-git branch | grep -v "master" | xargs git branch -D
+git branch | 
+grep -v "master" | 
+xargs git branch -D
 ```
 ##### Show all branches merged into master
 ```
@@ -156,6 +158,16 @@ git branch --merged
 ##### Show all branches that have not been merged to master
 ```
 git branch --no-merged
+```
+##### Delete all merged branches into master
+```
+git branch -r --merged |
+grep origin |
+grep -v '>' |
+grep -v master |
+xargs -L1 |
+awk '{split($0,a,"/"); print a[2]}' |
+xargs git push origin --delete
 ```
 
 
