@@ -169,7 +169,13 @@ xargs -L1 |
 awk '{split($0,a,"/"); print a[2]}' |
 xargs git push origin --delete
 ```
-
+##### Update a github forked repo
+```
+git remote add upstream <parent-repo-url>
+git fetch upstream
+git rebase upstream/master
+git push -f origin master
+```
 
 
 
