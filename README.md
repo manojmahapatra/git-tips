@@ -180,7 +180,10 @@ git push -f origin master
 ```
 git submodule update --init --recursive
 ```
-
+#### Delete untracked files
+```
+git clean -f -d
+```
 
 
 
