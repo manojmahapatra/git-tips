@@ -176,7 +176,10 @@ git fetch upstream
 git rebase upstream/master
 git push -f origin master
 ```
-
+#### Git submoulde update
+```
+git submodule update --init --recursive
+```
 
 
 
