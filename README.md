@@ -184,6 +184,13 @@ git submodule update --init --recursive
 ```
 git clean -f -d
 ```
-
+#### Adding an existing project to github
+```
+git init
+git add .
+git commit -m "commit message"
+git remote add origin <remote repository url>
+git push -u origin master
+```
 
 
