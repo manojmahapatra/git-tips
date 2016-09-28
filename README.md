@@ -192,5 +192,8 @@ git commit -m "commit message"
 git remote add origin <remote repository url>
 git push -u origin master
 ```
-
+#### Set origin head for remote repo
+```
+git remote set-head origin <branch>
+```
 
