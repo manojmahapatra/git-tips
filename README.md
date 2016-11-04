@@ -196,4 +196,7 @@ git push -u origin master
 ```
 git remote set-head origin <branch>
 ```
-
+#### Add Carthage checkout to git submodule
+```
+carthage checkout --use-submodules
+```
