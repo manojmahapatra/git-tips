@@ -200,3 +200,8 @@ git remote set-head origin <branch>
 ```
 carthage checkout --use-submodules
 ```
+
+#### Build Carthage schemes
+```
+carthage build --no-skip-current
+```
