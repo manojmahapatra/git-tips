@@ -205,3 +205,8 @@ carthage checkout --use-submodules
 ```
 carthage build --no-skip-current
 ```
+
+#### Show all git alias
+```
+git config --get-regexp alias
+```
