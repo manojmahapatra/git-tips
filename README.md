@@ -147,6 +147,13 @@ git branch |
 grep -v "master" | 
 xargs git branch -D
 ```
+##### Delete all local branches but master and develop
+```
+git branch | 
+grep -v "master\|develop" | 
+xargs git branch -D
+```
+
 ##### Show all branches merged into master
 ```
 git branch --merged master
