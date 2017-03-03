@@ -215,5 +215,10 @@ carthage build --no-skip-current
 
 #### Show all git alias
 ```
-git config --get-regexp alias
+git config --list | grep alias
+```
+
+#### Remove a git alias
+```
+git config --global --unset alias.lg
 ```
