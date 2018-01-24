@@ -222,3 +222,11 @@ git config --list | grep alias
 ```
 git config --global --unset alias.lg
 ```
+
+#### Alias to add to gitconfig to fetch PR and/or MR(GitLab) from upstream
+```
+[alias]
+    mr = !sh -c 'git fetch $1 merge-requests/$2/head:mr-$1-$2 && git checkout mr-$1-$2' -
+[alias]
+	pr = !sh -c 'git fetch $1 pull/$2/head:pr-$1-$2 && git checkout pr-$1-$2' -
+```
