@@ -230,3 +230,6 @@ git config --global --unset alias.lg
 [alias]
 	pr = !sh -c 'git fetch $1 pull/$2/head:pr-$1-$2 && git checkout pr-$1-$2' -
 ```
+ 
+ git mr upstream <MR Number>
+ git pr upstream <PR Number>
