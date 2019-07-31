@@ -235,3 +235,13 @@ git config --global --unset alias.lg
 git mr upstream <MR Number>
 git pr upstream <PR Number>
  ```
+
+#### Fetch/Pull from Upstream (master)
+```
+git pull upstream master
+```
+
+#### Update local (master) after pull from upstream
+```
+git push origin master
+```
