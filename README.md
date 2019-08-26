@@ -29,6 +29,10 @@ git remote add <remote-name> <url>
 ```
 git remote -v
 ```
+#### Removing a remote
+```
+git remote rm <destination>
+```
 ##### Create a branch locally
 ```
 git checkout -b <branch-name>
