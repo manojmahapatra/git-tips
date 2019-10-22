@@ -249,3 +249,8 @@ git pull upstream master
 ```
 git push origin master
 ```
+
+#### Finding the repo size
+```
+git count-objects -vH | grep "size-pack"
+```
