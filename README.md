@@ -254,3 +254,5 @@ git push origin master
 ```
 git count-objects -vH | grep "size-pack"
 ```
+
+https://superuser.com/questions/229290/how-to-amend-the-last-commit-to-un-add-a-file
