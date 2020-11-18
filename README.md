@@ -258,3 +258,18 @@ git count-objects -vH | grep "size-pack"
 ```
 https://superuser.com/questions/229290/how-to-amend-the-last-commit-to-un-add-a-file
 ```
+
+#### Apply and update gitignore
+- single file
+```
+git rm -r --cached filename
+```
+
+- all files in
+```
+git rm -r --cached .
+```
+
+```
+git add .
+```
