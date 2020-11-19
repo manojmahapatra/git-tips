@@ -273,3 +273,17 @@ git rm -r --cached .
 ```
 git add .
 ```
+
+#### Prune remote tracking branches
+Every time you fetch from a remote, tracking braches are pulled down from the remote. After a while you'll find you have lots of `origin/*` branches in your local repro which no longer exist on the remote. To find out which branches they are, run this command:
+```
+git remote prune origin --dry-run
+```
+To go ahead and delete those branches it's:
+```
+git remote prune origin
+```
+You can also prune when you fetch from a remote. To do this use the --prune option:
+```
+git fetch --prune
+```
