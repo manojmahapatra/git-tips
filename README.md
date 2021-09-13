@@ -287,3 +287,6 @@ You can also prune when you fetch from a remote. To do this use the --prune opti
 ```
 git fetch --prune
 ```
+
+
+More tips - https://github.com/jbranchaud/til#git
