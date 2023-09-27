@@ -288,5 +288,13 @@ You can also prune when you fetch from a remote. To do this use the --prune opti
 git fetch --prune
 ```
 
+#### Git chery pick
+```
+git checkout <git SHA>
+git switch -c <branch name>
+ggpush
+gcp <git sha>
+ggpush
+```
 
 More tips - https://github.com/jbranchaud/til#git
